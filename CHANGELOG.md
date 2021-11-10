@@ -1,6 +1,7 @@
 # Changelog
 
-## [Unreleased]
+## [0.5.1 - 2021-11-10]
+Package deprecated in favor of `codename/parquet`, please see [**github.com/codename-hub/php-parquet**](https://github.com/codename-hub/php-parquet) or the package at [**codename/parquet**](https://packagist.org/packages/codename/parquet).
 ### Changed
 - Skip some tests if ext-snappy unavailable
 - Benchmark: enable snappy compression benchmark if respective extension available/loaded

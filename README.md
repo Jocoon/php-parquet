@@ -16,6 +16,17 @@ Therefore, thanks go out to Ivan Gavryliuk (https://github.com/aloneguid).
 This package enables you to read and write Parquet files/streams.
 It has (almost?) 100% test compatibility with parquet-dotnet, regarding the core functionality, done via PHPUnit.
 
+## Migration notice
+As of 2021-11-10 (and `v0.5.1`), this project is moving to a new repository and package due to organizational changes.
+* * *
+:star: **Development continues** at [**github.com/codename-hub/php-parquet**](https://github.com/codename-hub/php-parquet) under the new composer package name [**codename/parquet**](https://packagist.org/packages/codename/parquet). :star:
+* * *
+Please note, this also involves a namespace change from `jocoon\parquet` to `codename\parquet`, but no other breaking changes (you might simply use a search-and-replace method in your code, in case). The project will continue to stick to Semver conventions.
+The existing package will continue to work, but there will be no bugfixes or new features.
+
+Please use the new package and file issues/PRs there, if any.
+The new package is on the verge of providing more essential features of the Parquet format, including new format specs while improving the overall implementation, especially regarding nested and repeated fields.
+
 ## Preamble
 For some parts of this package, some new patterns had to be invented as I haven't found any implementation that met the requirements.
 For most cases, there weren't any implementations available, at all.
@@ -86,6 +97,9 @@ Install this package via composer, e.g.
 ```bash
 composer require jocoon/parquet
 ```
+* * *
+**Please note:** as of 2021-11-10 I'd like to encourage switching to `codename/parquet`, see migration notice above.
+* * *
 
 The included _Dockerfile_ gives you an idea of the needed system requirements.
 The most important thing to perform, is to clone and install __php-ext-snappy__.
